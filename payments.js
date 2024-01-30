@@ -1,4 +1,3 @@
-// const payments = Square.payments(APPLICATION_ID, LOCATION_ID);
 // var qrcode = '?src=webqr';
 // var check = location.search;
 
@@ -16,8 +15,10 @@
 // }
 
 // setInterval(checkScannerYn, 3000);
+
 const appId = 'sandbox-sq0idb-oEAdWts9vH7Mq1FvBszZLA';
       const locationId = 'LNW88NC7N795K';
+const payments = Square.payments(appId, locationId);
 
       function buildPaymentRequest(payments) {
         const paymentRequest = payments.paymentRequest({
